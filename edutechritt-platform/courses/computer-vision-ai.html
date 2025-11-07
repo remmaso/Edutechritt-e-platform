@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Vision & AI - EduTechRitt AI Training Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #dc2626 100%);
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="../index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+                        <span class="text-2xl font-bold text-gray-800">EduTechRitt<span class="text-indigo-600">AI</span></span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="../index.html#courses" class="text-gray-700 hover:text-indigo-600 transition-colors">Courses</a>
+                    <a href="#curriculum" class="text-gray-700 hover:text-indigo-600 transition-colors">Curriculum</a>
+                    <a href="#applications" class="text-gray-700 hover:text-indigo-600 transition-colors">Applications</a>
+                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition-colors">Projects</a>
+                    <a href="../index.html#contact" class="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+                    <a href="../index.html#login" class="text-indigo-600 hover:text-indigo-700 font-medium transition-colors">Login</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Practical</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">8 Weeks</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Certificate</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        Computer Vision & AI
+                    </h1>
+                    <p class="text-xl mb-8 text-white/90">
+                        Master the art of teaching computers to see and interpret the visual world. Build advanced image recognition, object detection, and computer vision applications using TensorFlow and PyTorch.
+                    </p>
+                    <div class="flex items-center space-x-6 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="font-semibold">4.7 (1,523 reviews)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-users"></i>
+                            <span>7,891 students enrolled</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button id="enroll-btn" class="bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                            Enroll Now - $499
+                        </button>
+                        <button id="add-to-cart" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-orange-600 transition-all">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Computer Vision" 
+                         class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Master Visual AI Technologies</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-eye text-orange-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Image Processing</h3>
+                                <p class="text-gray-600">Master OpenCV and image manipulation techniques</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-cube text-orange-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Object Detection</h3>
+                                <p class="text-gray-600">Build YOLO and R-CNN detection systems</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-user text-orange-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Face Recognition</h3>
+                                <p class="text-gray-600">Create biometric identification systems</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-car text-orange-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Autonomous Vehicles</h3>
+                                <p class="text-gray-600">Learn computer vision for self-driving cars</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-video text-orange-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Video Analysis</h3>
+                                <p class="text-gray-600">Process and analyze video streams</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-medkit text-orange-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Medical Imaging</h3>
+                                <p class="text-gray-600">Apply CV to healthcare and diagnostics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Info Card -->
+                <div class="bg-gray-50 rounded-xl p-6 h-fit">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Course Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-gray-600"></i>
+                                <span class="text-gray-700">Duration</span>
+                            </div>
+                            <span class="font-semibold">8 Weeks</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-signal text-gray-600"></i>
+                                <span class="text-gray-700">Level</span>
+                            </div>
+                            <span class="font-semibold">Intermediate</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-code text-gray-600"></i>
+                                <span class="text-gray-700">Prerequisites</span>
+                            </div>
+                            <span class="font-semibold">Python & ML Basics</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-certificate text-gray-600"></i>
+                                <span class="text-gray-700">Certificate</span>
+                            </div>
+                            <span class="font-semibold">Yes</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-users text-gray-600"></i>
+                                <span class="text-gray-700">Students</span>
+                            </div>
+                            <span class="font-semibold">7,891</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-star text-gray-600"></i>
+                                <span class="text-gray-700">Rating</span>
+                            </div>
+                            <span class="font-semibold">4.7/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-800 mb-3">This course includes:</h4>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-video text-orange-600"></i>
+                                <span>56 hours of video content</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-alt text-orange-600"></i>
+                                <span>75 downloadable resources</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>7 hands-on projects</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-dataset text-orange-600"></i>
+                                <span>Real-world datasets</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-infinity text-orange-600"></i>
+                                <span>Lifetime access</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="preview-certificate" class="w-full mt-6 bg-orange-100 text-orange-600 py-3 rounded-lg font-semibold hover:bg-orange-200 transition-colors">
+                        <i class="fas fa-eye mr-2"></i>Preview Certificate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Computer Vision Applications -->
+    <section id="applications" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Real-World Applications</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-orange-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-car text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Autonomous Driving</h3>
+                    <p class="text-gray-600 mb-4">Lane detection, object tracking, and pedestrian detection for self-driving vehicles</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Lane detection algorithms</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>3D object detection</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Traffic sign recognition</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-user-md text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Medical Imaging</h3>
+                    <p class="text-gray-600 mb-4">Disease detection, medical image analysis, and diagnostic assistance</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>X-ray and CT scan analysis</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Tumor detection</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Retinal disease diagnosis</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-purple-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-shopping-cart text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Retail Analytics</h3>
+                    <p class="text-gray-600 mb-4">Customer behavior analysis, inventory management, and store optimization</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>People counting systems</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Product recognition</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Heat map generation</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-green-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Security & Surveillance</h3>
+                    <p class="text-gray-600 mb-4">Face recognition, anomaly detection, and automated monitoring</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Face recognition systems</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Intrusion detection</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Crowd behavior analysis</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-red-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-agriculture text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Agriculture Tech</h3>
+                    <p class="text-gray-600 mb-4">Crop monitoring, disease detection, and yield prediction</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Crop health monitoring</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span> Weed detection</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Automated harvesting</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-xl flex items-center justify-center mb-4">
+                        <i class="fas fa-industry text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Manufacturing</h3>
+                    <p class="text-gray-600 mb-4">Quality control, defect detection, and process automation</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Product inspection</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Defect detection</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Assembly line monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Hands-On Projects</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="border border-gray-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-video text-orange-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Real-time Face Recognition System</h3>
+                            <p class="text-gray-600">Build a live face recognition application with OpenCV</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Implement face detection and recognition</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Create real-time video processing</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Build user database management</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-orange-600 font-medium">Intermediate</span>
+                        <span class="text-sm text-gray-500">2 weeks</span>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-car text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Lane Detection for Autonomous Vehicles</h3>
+                            <p class="text-gray-600">Create a lane detection system using deep learning</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Process road images and videos</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Implement lane detection algorithms</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Build real-time visualization</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-orange-600 font-medium">Advanced</span>
+                        <span class="text-sm text-gray-500">3 weeks</span>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-medkit text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Medical Image Classification</h3>
+                            <p class="text-gray-600">Build a system to classify medical images for diagnosis</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Process X-ray and MRI images</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Implement disease detection models</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Create diagnostic dashboard</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-orange-600 font-medium">Advanced</span>
+                        <span class="text-sm text-gray-500">4 weeks</span>
+                    </div>
+                </div>
+                
+                <div class="border border-gray-200 rounded-xl p-6 hover:border-orange-500 transition-colors">
+                    <div class="flex items-center space-x-4 mb-4">
+                        <div class="bg-purple-100 w-12 h-12 rounded-lg flex items-center justify-center">
+                            <i class="fas fa-cube text-purple-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800">Object Detection with YOLO</h3>
+                            <p class="text-gray-600">Implement real-time object detection using YOLO</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 mb-4">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Train custom YOLO models</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Implement multi-object tracking</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span class="text-gray-700">Build detection API service</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-orange-600 font-medium">Intermediate</span>
+                        <span class="text-sm text-gray-500">3 weeks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Technologies You'll Master</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="text-center">
+                    <div class="bg-gray-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-fire text-gray-700 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">TensorFlow</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <span class="text-orange-600 font-bold text-xl">CV2</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">OpenCV</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">PyTorch</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <span class="text-green-600 font-bold text-lg">YOLO</span>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">YOLO</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-chart-line text-purple-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">FastAI</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-red-100 w-20 h-20 rounded-lg flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-cube text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">Detectron2</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Comprehensive Curriculum</h2>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-orange-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 1: Computer Vision Fundamentals</h3>
+                        <p class="text-orange-100 mt-2">Introduction to image processing and computer vision concepts</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Introduction to Computer Vision</span>
+                            </div>
+                            <span class="text-sm text-gray-500">40 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-code text-green-600"></i>
+                                <span>OpenCV Basics and Setup</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Lab</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Image Processing Techniques</span>
+                            </div>
+                            <span class="text-sm text-gray-500">55 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-orange-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 2: Deep Learning for Vision</h3>
+                        <p class="text-orange-100 mt-2">CNN architectures and training techniques</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Convolutional Neural Networks</span>
+                            </div>
+                            <span class="text-sm text-gray-500">65 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>Build Your First CNN</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Project</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Transfer Learning with Pre-trained Models</span>
+                            </div>
+                            <span class="text-sm text-gray-500">50 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200">
+                    <div class="bg-orange-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 3: Object Detection and Segmentation</h3>
+                        <p class="text-orange-100 mt-2">Advanced techniques for object detection and image segmentation</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Object Detection Fundamentals</span>
+                            </div>
+                            <span class="text-sm text-gray-500">60 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>YOLO and SSD Algorithms</span>
+                            </div>
+                            <span class="text-sm text-gray-500">75 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>Real-time Detection System</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Capstone</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-4xl w-full p-8 relative">
+            <button onclick="document.getElementById('certificate-modal').classList.add('hidden')" 
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Certificate Preview</h3>
+                <div class="border-4 border-orange-600 rounded-lg p-8 bg-gradient-to-br from-orange-50 to-red-50">
+                    <div class="mb-6">
+                        <i class="fas fa-eye text-6xl text-orange-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Certificate of Completion</h2>
+                    <p class="text-lg text-gray-600 mb-6">This is to certify that</p>
+                    <div class="border-b-2 border-gray-300 pb-2 mb-6">
+                        <p class="text-2xl font-bold text-orange-600">Your Name</p>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-2">has successfully completed the course</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Computer Vision & AI</h3>
+                    <div class="flex justify-center space-x-8 mb-6">
+                        <div>
+                            <p class="text-sm text-gray-500">Duration</p>
+                            <p class="font-semibold">8 Weeks</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Completion Date</p>
+                            <p class="font-semibold">December 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Grade</p>
+                            <p class="font-semibold">A+</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-12">
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Instructor Signature</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Director Signature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-400"></i>
+                        <span class="text-xl font-bold">EduTechRitt<span class="text-indigo-400">AI</span></span>
+                    </div>
+                    <p class="text-gray-400">
+                        Master the future of visual AI technologies.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../index.html#courses" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="#curriculum" class="hover:text-white transition-colors">Curriculum</a></li>
+                        <li><a href="../index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#applications" class="hover:text-white transition-colors">Applications</a></li>
+                        <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Datasets</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">
+                        info@edutechritt.com<br>
++234 (080) 2415-5919
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EduTechRitt AI Training Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/course.js"></script>
+</body>
+</html>

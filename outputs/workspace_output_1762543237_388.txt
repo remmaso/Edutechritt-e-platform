@@ -1,0 +1,10 @@
+// WhatsApp Chat Widget Functionality
+class WhatsAppChatBot {
+    constructor() {
+        this.phoneNumber = '08024155919';
+        this.isOpen = false;
+        this.isTyping = false;
+        this.userMessages = [];
+        
+        this.init();
+    }

@@ -1,0 +1,7 @@
+total 36
+drwxr-xr-x 5 root root    79 Nov  7 18:12 .
+drwxr-xr-x 4 root root    80 Nov  7 18:12 ..
+drwxr-xr-x 2 root root    10 Nov  7 18:12 css
+drwxr-xr-x 2 root root    10 Nov  7 18:12 images
+-rw-r--r-- 1 root root 34355 Nov  7 18:12 index.html
+drwxr-xr-x 2 root root    29 Nov  7 18:12 js

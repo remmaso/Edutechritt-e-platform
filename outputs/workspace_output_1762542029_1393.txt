@@ -1,0 +1,18 @@
+(Not all processes could be identified, non-owned process info
+ will not be shown, you would have to be root to see it all.)
+tcp        0      0 0.0.0.0:3000            0.0.0.0:*               LISTEN      689/python          
+tcp        0      0 0.0.0.0:3222            0.0.0.0:*               LISTEN      128/nginx: master p 
+tcp        0      0 0.0.0.0:8002            0.0.0.0:*               LISTEN      130/python          
+tcp        0      0 0.0.0.0:8080            0.0.0.0:*               LISTEN      132/python          
+tcp        0      0 0.0.0.0:5000            0.0.0.0:*               LISTEN      128/nginx: master p 
+tcp        0      0 0.0.0.0:5901            0.0.0.0:*               LISTEN      125/x11vnc          
+tcp        0      0 0.0.0.0:6080            0.0.0.0:*               LISTEN      552/python3         
+tcp        0      0 127.0.0.1:2222          0.0.0.0:*               LISTEN      136/ttyd            
+tcp        0      0 127.0.0.1:4000          0.0.0.0:*               LISTEN      233/node            
+tcp6       0      0 :::22220                :::*                    LISTEN      73/daytona          
+tcp6       0      0 :::22222                :::*                    LISTEN      73/daytona          
+tcp6       0      0 :::2280                 :::*                    LISTEN      73/daytona          
+tcp6       0      0 :::3222                 :::*                    LISTEN      128/nginx: master p 
+tcp6       0      0 :::5000                 :::*                    LISTEN      128/nginx: master p 
+tcp6       0      0 :::5900                 :::*                    LISTEN      125/x11vnc          
+tcp6       0      0 :::5901                 :::*                    LISTEN      125/x11vnc          

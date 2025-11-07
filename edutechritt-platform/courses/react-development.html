@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>React Development - EduTechRitt AI Training Center</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css'>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+        }
+        .code-preview {
+            background: #1e293b;
+            color: #e2e8f0;
+            font-family: 'Courier New', monospace;
+        }
+        .code-tag { color: #f97316; }
+        .code-attr { color: #60a5fa; }
+        .code-jsx { color: #86efac; }
+        .react-spinner {
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body class='bg-gray-50'>
+    <!-- Navigation -->
+    <header class='fixed top-0 w-full bg-white shadow-md z-50'>
+        <nav class='container mx-auto px-6 py-4'>
+            <div class='flex items-center justify-between'>
+                <div class='flex items-center space-x-2'>
+                    <a href='../index.html' class='flex items-center space-x-2'>
+                        <i class='fas fa-graduation-cap text-3xl text-indigo-600'></i>
+                        <span class='text-2xl font-bold text-gray-800'>EduTechRitt<span class='text-indigo-600'>AI</span></span>
+                    </a>
+                </div>
+                
+                <div class='hidden md:flex items-center space-x-8'>
+                    <a href='../index.html' class='text-gray-700 hover:text-indigo-600 transition-colors'>Home</a>
+                    <a href='index.html' class='text-gray-700 hover:text-indigo-600 transition-colors'>Courses</a>
+                    <a href='#curriculum' class='text-gray-700 hover:text-indigo-600 transition-colors'>Curriculum</a>
+                    <a href='#hooks' class='text-gray-700 hover:text-indigo-600 transition-colors'>Hooks</a>
+                    <a href='#projects' class='text-gray-700 hover:text-indigo-600 transition-colors'>Projects</a>
+                    <a href='../index.html#contact' class='text-gray-700 hover:text-indigo-600 transition-colors'>Contact</a>
+                    <a href='../index.html#login' class='text-indigo-600 hover:text-indigo-700 font-medium transition-colors'>Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class='hero-gradient text-white pt-24 pb-20'>
+        <div class='container mx-auto px-6'>
+            <div class='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
+                <div>
+                    <div class='flex items-center space-x-2 mb-6'>
+                        <span class='bg-white/20 px-3 py-1 rounded-full text-sm'>Intermediate</span>
+                        <span class='bg-white/20 px-3 py-1 rounded-full text-sm'>10 Weeks</span>
+                        <span class='bg-white/20 px-3 py-1 rounded-full text-sm'>Certificate</span>
+                    </div>
+                    <h1 class='text-4xl md:text-5xl font-bold mb-6'>
+                        React Development
+                    </h1>
+                    <p class='text-xl mb-8 text-white/90'>
+                        Master React.js and build modern, interactive web applications. Learn components, state management, hooks, and create production-ready React applications with best practices.
+                    </p>
+                    <div class='flex flex-col sm:flex-row gap-4'>
+                        <button id='enroll-btn' class='bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105'>
+                            Enroll Now - NGN549
+                        </button>
+                        <button id='add-to-cart' class='border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all'>
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class='code-preview rounded-lg p-4 text-sm'>
+                        <div><span class='code-tag'></span><span class='code-tag'>div</span><span class='code-tag'>></span></div>
+                        <div>  <span class='code-tag'></span><span class='code-tag'>h1</span><span class='code-tag'>></span>Welcome to React!<span class='code-tag'></span><span class='code-tag'>/h1</span><span class='code-tag'>></span></div>
+                        <div>  <span class='code-tag'></span><span class='code-tag'>button</span> <span class='code-attr'>onClick</span>=<span class='code-jsx'>{() => setCount(count + 1)}</span><span class='code-tag'>></span></div>
+                        <div>    Count: {count}</div>
+                        <div>  <span class='code-tag'></span><span class='code-tag'>/button</span><span class='code-tag'>></span></div>
+                        <div><span class='code-tag'></span><span class='code-tag'>/div</span><span class='code-tag'>></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class='py-16 bg-white'>
+        <div class='container mx-auto px-6'>
+            <h2 class='text-3xl font-bold text-gray-800 mb-6'>Master Modern React Development</h2>
+            <div class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
+                <div class='bg-gray-50 rounded-xl p-6'>
+                    <div class='bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4'>
+                        <i class='fas fa-cube text-blue-600 text-2xl'></i>
+                    </div>
+                    <h3 class='text-xl font-bold text-gray-800 mb-2 text-center'>React Components</h3>
+                    <p class='text-gray-600 text-center'>Build reusable UI components</p>
+                </div>
+                <div class='bg-gray-50 rounded-xl p-6'>
+                    <div class='bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4'>
+                        <i class='fas fa-link text-cyan-600 text-2xl'></i>
+                    </div>
+                    <h3 class='text-xl font-bold text-gray-800 mb-2 text-center'>React Hooks</h3>
+                    <p class='text-gray-600 text-center'>useState, useEffect, custom hooks</p>
+                </div>
+                <div class='bg-gray-50 rounded-xl p-6'>
+                    <div class='bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4'>
+                        <i class='fas fa-route text-green-600 text-2xl'></i>
+                    </div>
+                    <h3 class='text-xl font-bold text-gray-800 mb-2 text-center'>React Router</h3>
+                    <p class='text-gray-600 text-center'>Single-page applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src='js/course.js'></script>
+</body>
+</html>

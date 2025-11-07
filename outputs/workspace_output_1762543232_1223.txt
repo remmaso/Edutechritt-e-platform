@@ -1,0 +1,5 @@
+    <!-- WhatsApp Chat Widget Styles -->
+    <link rel="stylesheet" href="css/whatsapp-chat.css">
+    <script src="js/whatsapp-chat.js"></script>
+<!-- WhatsApp Chat Widget -->
+    <div class="whatsapp-chat-widget">

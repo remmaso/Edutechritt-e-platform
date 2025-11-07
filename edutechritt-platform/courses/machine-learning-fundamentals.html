@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Fundamentals - EduTechRitt AI Training Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="../index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+                        <span class="text-2xl font-bold text-gray-800">EduTechRitt<span class="text-indigo-600">AI</span></span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="../index.html#courses" class="text-gray-700 hover:text-indigo-600 transition-colors">Courses</a>
+                    <a href="#curriculum" class="text-gray-700 hover:text-indigo-600 transition-colors">Curriculum</a>
+                    <a href="#instructors" class="text-gray-700 hover:text-indigo-600 transition-colors">Instructors</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-indigo-600 transition-colors">Reviews</a>
+                    <a href="../index.html#contact" class="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+                    <a href="../index.html#login" class="text-indigo-600 hover:text-indigo-700 font-medium transition-colors">Login</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Beginner Friendly</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">8 Weeks</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Certificate</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        Machine Learning Fundamentals
+                    </h1>
+                    <p class="text-xl mb-8 text-white/90">
+                        Master the foundations of machine learning with hands-on projects, real-world applications, and expert guidance. Start your AI journey from scratch and build a strong foundation in ML concepts.
+                    </p>
+                    <div class="flex items-center space-x-6 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="font-semibold">4.8 (2,341 reviews)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-users"></i>
+                            <span>15,234 students enrolled</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button id="enroll-btn" class="bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                            Enroll Now - $299
+                        </button>
+                        <button id="add-to-cart" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-indigo-600 transition-all">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Machine Learning" 
+                         class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">What You'll Learn</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Core ML Concepts</h3>
+                                <p class="text-gray-600">Understand supervised, unsupervised, and reinforcement learning fundamentals</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Python Programming</h3>
+                                <p class="text-gray-600">Master Python libraries like NumPy, Pandas, and Scikit-learn</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Data Preprocessing</h3>
+                                <p class="text-gray-600">Learn to clean, transform, and prepare data for ML models</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Model Evaluation</h3>
+                                <p class="text-gray-600">Understand metrics, cross-validation, and model selection techniques</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Real Projects</h3>
+                                <p class="text-gray-600">Build 5+ hands-on projects for your portfolio</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-check-circle text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Industry Applications</h3>
+                                <p class="text-gray-600">Apply ML techniques to solve real business problems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Info Card -->
+                <div class="bg-gray-50 rounded-xl p-6 h-fit">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Course Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-gray-600"></i>
+                                <span class="text-gray-700">Duration</span>
+                            </div>
+                            <span class="font-semibold">8 Weeks</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-signal text-gray-600"></i>
+                                <span class="text-gray-700">Level</span>
+                            </div>
+                            <span class="font-semibold">Beginner</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-language text-gray-600"></i>
+                                <span class="text-gray-700">Language</span>
+                            </div>
+                            <span class="font-semibold">English</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-certificate text-gray-600"></i>
+                                <span class="text-gray-700">Certificate</span>
+                            </div>
+                            <span class="font-semibold">Yes</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-users text-gray-600"></i>
+                                <span class="text-gray-700">Students</span>
+                            </div>
+                            <span class="font-semibold">15,234</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-star text-gray-600"></i>
+                                <span class="text-gray-700">Rating</span>
+                            </div>
+                            <span class="font-semibold">4.8/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-800 mb-3">This course includes:</h4>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-video text-indigo-600"></i>
+                                <span>48 hours of video content</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-alt text-indigo-600"></i>
+                                <span>85 downloadable resources</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-project-diagram text-indigo-600"></i>
+                                <span>5 hands-on projects</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-infinity text-indigo-600"></i>
+                                <span>Lifetime access</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="preview-certificate" class="w-full mt-6 bg-indigo-100 text-indigo-600 py-3 rounded-lg font-semibold hover:bg-indigo-200 transition-colors">
+                        <i class="fas fa-eye mr-2"></i>Preview Certificate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Course Curriculum</h2>
+            
+            <!-- Module Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button class="module-tab px-6 py-3 rounded-lg font-semibold transition-all bg-indigo-600 text-white" data-module="1">
+                    Module 1
+                </button>
+                <button class="module-tab px-6 py-3 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700" data-module="2">
+                    Module 2
+                </button>
+                <button class="module-tab px-6 py-3 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700" data-module="3">
+                    Module 3
+                </button>
+                <button class="module-tab px-6 py-3 rounded-lg font-semibold transition-all bg-gray-200 text-gray-700" data-module="4">
+                    Module 4
+                </button>
+            </div>
+            
+            <!-- Module Contents -->
+            <div id="module-1" class="module-content">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-indigo-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 1: Introduction to Machine Learning</h3>
+                        <p class="text-indigo-100 mt-2">12 lessons • 8 hours total</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="accordion-item border border-gray-200 rounded-lg">
+                                <div class="accordion-header flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-play-circle text-indigo-600"></i>
+                                        <div>
+                                            <h4 class="font-semibold">1.1 What is Machine Learning?</h4>
+                                            <p class="text-sm text-gray-600">Introduction to ML concepts and terminology</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <span class="text-sm text-gray-500">15:24</span>
+                                        <i class="fas fa-chevron-down accordion-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-4 pb-4">
+                                    <p class="text-gray-700">Learn the fundamental concepts of machine learning, its history, and how it differs from traditional programming.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border border-gray-200 rounded-lg">
+                                <div class="accordion-header flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-play-circle text-indigo-600"></i>
+                                        <div>
+                                            <h4 class="font-semibold">1.2 Types of Machine Learning</h4>
+                                            <p class="text-sm text-gray-600">Supervised, Unsupervised, and Reinforcement Learning</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <span class="text-sm text-gray-500">22:18</span>
+                                        <i class="fas fa-chevron-down accordion-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-4 pb-4">
+                                    <p class="text-gray-700">Deep dive into the three main types of machine learning with real-world examples.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border border-gray-200 rounded-lg">
+                                <div class="accordion-header flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-file-alt text-green-600"></i>
+                                        <div>
+                                            <h4 class="font-semibold">1.3 Python Setup and Environment</h4>
+                                            <p class="text-sm text-gray-600">Installing Python, Jupyter, and required libraries</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <span class="text-sm text-gray-500">Reading</span>
+                                        <i class="fas fa-chevron-down accordion-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-4 pb-4">
+                                    <p class="text-gray-700">Step-by-step guide to setting up your Python development environment for ML.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="module-2" class="module-content hidden">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-indigo-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 2: Data Preprocessing and Feature Engineering</h3>
+                        <p class="text-indigo-100 mt-2">15 lessons • 10 hours total</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="accordion-item border border-gray-200 rounded-lg">
+                                <div class="accordion-header flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-play-circle text-indigo-600"></i>
+                                        <div>
+                                            <h4 class="font-semibold">2.1 Data Collection and Sources</h4>
+                                            <p class="text-sm text-gray-600">Finding and collecting quality datasets</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <span class="text-sm text-gray-500">18:42</span>
+                                        <i class="fas fa-chevron-down accordion-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-4 pb-4">
+                                    <p class="text-gray-700">Learn where to find datasets and how to collect data for your ML projects.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="accordion-item border border-gray-200 rounded-lg">
+                                <div class="accordion-header flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-code text-green-600"></i>
+                                        <div>
+                                            <h4 class="font-semibold">2.2 Data Cleaning with Pandas</h4>
+                                            <p class="text-sm text-gray-600">Handling missing values, duplicates, and outliers</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <span class="text-sm text-gray-500">Lab</span>
+                                        <i class="fas fa-chevron-down accordion-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-4 pb-4">
+                                    <p class="text-gray-700">Hands-on lab for cleaning real-world datasets using Pandas.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="module-3" class="module-content hidden">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-indigo-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 3: Supervised Learning Algorithms</h3>
+                        <p class="text-indigo-100 mt-2">18 lessons • 12 hours total</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="accordion-item border border-gray-200 rounded-lg">
+                                <div class="accordion-header flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-play-circle text-indigo-600"></i>
+                                        <div>
+                                            <h4 class="font-semibold">3.1 Linear Regression</h4>
+                                            <p class="text-sm text-gray-600">Understanding and implementing linear regression</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <span class="text-sm text-gray-500">25:16</span>
+                                        <i class="fas fa-chevron-down accordion-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-4 pb-4">
+                                    <p class="text-gray-700">Master linear regression from theory to implementation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="module-4" class="module-content hidden">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-indigo-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 4: Model Evaluation and Deployment</h3>
+                        <p class="text-indigo-100 mt-2">10 lessons • 6 hours total</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-4">
+                            <div class="accordion-item border border-gray-200 rounded-lg">
+                                <div class="accordion-header flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                                    <div class="flex items-center space-x-3">
+                                        <i class="fas fa-play-circle text-indigo-600"></i>
+                                        <div>
+                                            <h4 class="font-semibold">4.1 Model Performance Metrics</h4>
+                                            <p class="text-sm text-gray-600">Accuracy, Precision, Recall, F1-Score</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-center space-x-4">
+                                        <span class="text-sm text-gray-500">20:30</span>
+                                        <i class="fas fa-chevron-down accordion-icon"></i>
+                                    </div>
+                                </div>
+                                <div class="accordion-content px-4 pb-4">
+                                    <p class="text-gray-700">Learn how to evaluate model performance using various metrics.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section id="instructors" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Meet Your Instructors</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                         alt="Instructor" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Sarah Johnson</h3>
+                    <p class="text-gray-600 mb-2">Senior ML Engineer at Google</p>
+                    <p class="text-sm text-gray-500 mb-4">10+ years in machine learning research and development</p>
+                    <div class="flex justify-center space-x-2 mb-4">
+                        <span class="bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs">PhD Stanford</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">50+ Papers</span>
+                    </div>
+                    <button class="view-instructor-btn text-indigo-600 hover:text-indigo-700 font-medium" data-instructor-id="1">
+                        View Full Profile
+                    </button>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                         alt="Instructor" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Prof. Michael Chen</h3>
+                    <p class="text-gray-600 mb-2">AI Research Director at MIT</p>
+                    <p class="text-sm text-gray-500 mb-4">Specializing in computer vision and deep learning</p>
+                    <div class="flex justify-center space-x-2 mb-4">
+                        <span class="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">15+ Years</span>
+                        <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">Industry Expert</span>
+                    </div>
+                    <button class="view-instructor-btn text-indigo-600 hover:text-indigo-700 font-medium" data-instructor-id="2">
+                        View Full Profile
+                    </button>
+                </div>
+                
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" 
+                         alt="Instructor" class="w-32 h-32 rounded-full mx-auto mb-4">
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Dr. Emily Rodriguez</h3>
+                    <p class="text-gray-600 mb-2">Data Science Lead at Amazon</p>
+                    <p class="text-sm text-gray-500 mb-4">Expert in natural language processing and recommendation systems</p>
+                    <div class="flex justify-center space-x-2 mb-4">
+                        <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">NLP Expert</span>
+                        <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">30+ Projects</span>
+                    </div>
+                    <button class="view-instructor-btn text-indigo-600 hover:text-indigo-700 font-medium" data-instructor-id="3">
+                        View Full Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Student Reviews</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" 
+                             alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Alex Thompson</p>
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "This course was exactly what I needed to start my ML journey. The instructors are amazing and the projects really helped me understand the concepts. Highly recommended!"
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" 
+                             alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">Lisa Wang</p>
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "Great course for beginners! The step-by-step approach and hands-on projects made learning ML fun and engaging. I'm now confident in my ML skills."
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80" 
+                             alt="Student" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold text-gray-800">James Miller</p>
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700">
+                        "The curriculum is well-structured and the instructors are very knowledgeable. The practical projects helped me build a strong portfolio. Worth every penny!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Frequently Asked Questions</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="faq-item border border-gray-200 rounded-lg">
+                    <div class="faq-question flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Do I need any prior programming experience?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer px-4 pb-4">
+                        <p class="text-gray-700">No prior programming experience is required. We'll teach you Python from scratch and guide you through all the necessary concepts.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg">
+                    <div class="faq-question flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">What software/tools do I need?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer px-4 pb-4">
+                        <p class="text-gray-700">You'll need Python, Jupyter Notebook, and several ML libraries like NumPy, Pandas, and Scikit-learn. We provide detailed setup instructions.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg">
+                    <div class="faq-question flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">Will I get a certificate after completion?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer px-4 pb-4">
+                        <p class="text-gray-700">Yes, you'll receive a verified certificate of completion that you can add to your resume and LinkedIn profile.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item border border-gray-200 rounded-lg">
+                    <div class="faq-question flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50">
+                        <h4 class="font-semibold text-gray-800">How long do I have access to the course?</h4>
+                        <i class="fas fa-chevron-down faq-icon"></i>
+                    </div>
+                    <div class="faq-answer px-4 pb-4">
+                        <p class="text-gray-700">You get lifetime access to all course materials, including future updates and additional resources.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 hero-gradient text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Ready to Start Your Machine Learning Journey?</h2>
+            <p class="text-xl mb-8 text-white/90">Join thousands of students who have already transformed their careers</p>
+            <button id="enroll-btn-2" class="bg-white text-indigo-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                Enroll Now - $299
+            </button>
+            <div class="mt-6 flex justify-center space-x-4">
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>30-Day Money Back Guarantee</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Secure Payment</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructor Modal -->
+    <div id="instructor-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full p-8 relative max-h-[90vh] overflow-y-auto">
+            <button id="close-instructor-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div id="instructor-details">
+                <!-- Instructor details will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-4xl w-full p-8 relative">
+            <button onclick="document.getElementById('certificate-modal').classList.add('hidden')" 
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Certificate Preview</h3>
+                <div class="border-4 border-indigo-600 rounded-lg p-8 bg-gradient-to-br from-indigo-50 to-purple-50">
+                    <div class="mb-6">
+                        <i class="fas fa-graduation-cap text-6xl text-indigo-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Certificate of Completion</h2>
+                    <p class="text-lg text-gray-600 mb-6">This is to certify that</p>
+                    <div class="border-b-2 border-gray-300 pb-2 mb-6">
+                        <p class="text-2xl font-bold text-indigo-600">Your Name</p>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-2">has successfully completed the course</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Machine Learning Fundamentals</h3>
+                    <div class="flex justify-center space-x-8 mb-6">
+                        <div>
+                            <p class="text-sm text-gray-500">Duration</p>
+                            <p class="font-semibold">8 Weeks</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Completion Date</p>
+                            <p class="font-semibold">December 2025</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Grade</p>
+                            <p class="font-semibold">A+</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-12">
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Instructor Signature</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Director Signature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-400"></i>
+                        <span class="text-xl font-bold">EduTechRitt<span class="text-indigo-400">AI</span></span>
+                    </div>
+                    <p class="text-gray-400">
+                        Empowering the next generation of AI professionals with world-class education.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../index.html#courses" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="#instructors" class="hover:text-white transition-colors">Instructors</a></li>
+                        <li><a href="../index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Course</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#curriculum" class="hover:text-white transition-colors">Curriculum</a></li>
+                        <li><a href="#reviews" class="hover:text-white transition-colors">Reviews</a></li>
+                        <li><a href="#faq" class="hover:text-white transition-colors">FAQ</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Certificate</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Share This Course</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <button class="share-btn text-gray-400 hover:text-white transition-colors" data-platform="twitter">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </button>
+                        <button class="share-btn text-gray-400 hover:text-white transition-colors" data-platform="facebook">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </button>
+                        <button class="share-btn text-gray-400 hover:text-white transition-colors" data-platform="linkedin">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </button>
+                        <button class="share-btn text-gray-400 hover:text-white transition-colors" data-platform="email">
+                            <i class="fas fa-envelope text-xl"></i>
+                        </button>
+                    </div>
+                    <p class="text-gray-400">
+                        info@edutechritt.com<br>
+                         +234 (080) 2415-5919
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 EduTechRitt AI Training Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/course.js"></script>
+</body>
+</html>

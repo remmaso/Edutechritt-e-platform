@@ -1,0 +1,10 @@
+/* WhatsApp Chat Widget Styles */
+.whatsapp-chat-widget {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.whatsapp-chat-button {
+    width: 60px;

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Learning & Neural Networks - EduTechRitt AI Training Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+        }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="../index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+                        <span class="text-2xl font-bold text-gray-800">EduTechRitt<span class="text-indigo-600">AI</span></span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="../index.html#courses" class="text-gray-700 hover:text-indigo-600 transition-colors">Courses</a>
+                    <a href="#curriculum" class="text-gray-700 hover:text-indigo-600 transition-colors">Curriculum</a>
+                    <a href="#instructors" class="text-gray-700 hover:text-indigo-600 transition-colors">Instructors</a>
+                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition-colors">Projects</a>
+                    <a href="../index.html#contact" class="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+                    <a href="../index.html#login" class="text-indigo-600 hover:text-indigo-700 font-medium transition-colors">Login</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Advanced</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">12 Weeks</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Certificate</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        Deep Learning & Neural Networks
+                    </h1>
+                    <p class="text-xl mb-8 text-white/90">
+                        Master advanced deep learning techniques, neural architectures, and build state-of-the-art AI models. From CNNs to Transformers, learn to create cutting-edge deep learning applications.
+                    </p>
+                    <div class="flex items-center space-x-6 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="font-semibold">4.9 (1,847 reviews)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-users"></i>
+                            <span>8,932 students enrolled</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button id="enroll-btn" class="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                            Enroll Now - $599
+                        </button>
+                        <button id="add-to-cart" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-purple-600 transition-all">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                         alt="Deep Learning" 
+                         class="rounded-2xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Master Deep Learning Technologies</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-brain text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Neural Networks</h3>
+                                <p class="text-gray-600">Build and train deep neural networks from scratch</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-image text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">CNN Architecture</h3>
+                                <p class="text-gray-600">Master convolutional neural networks for computer vision</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-stream text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">RNN & LSTM</h3>
+                                <p class="text-gray-600">Build sequence models for text and time series</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-project-diagram text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Transformers</h3>
+                                <p class="text-gray-600">Learn attention mechanisms and transformer models</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-cogs text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">GANs & VAEs</h3>
+                                <p class="text-gray-600">Create generative models for synthetic data</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-rocket text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Production Deployment</h3>
+                                <p class="text-gray-600">Deploy models using TensorFlow Serving and AWS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Info Card -->
+                <div class="bg-gray-50 rounded-xl p-6 h-fit">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Course Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-gray-600"></i>
+                                <span class="text-gray-700">Duration</span>
+                            </div>
+                            <span class="font-semibold">12 Weeks</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-signal text-gray-600"></i>
+                                <span class="text-gray-700">Level</span>
+                            </div>
+                            <span class="font-semibold">Advanced</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-code text-gray-600"></i>
+                                <span class="text-gray-700">Prerequisites</span>
+                            </div>
+                            <span class="font-semibold">Python & ML Basics</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-certificate text-gray-600"></i>
+                                <span class="text-gray-700">Certificate</span>
+                            </div>
+                            <span class="font-semibold">Yes</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-users text-gray-600"></i>
+                                <span class="text-gray-700">Students</span>
+                            </div>
+                            <span class="font-semibold">8,932</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-star text-gray-600"></i>
+                                <span class="text-gray-700">Rating</span>
+                            </div>
+                            <span class="font-semibold">4.9/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-800 mb-3">This course includes:</h4>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-video text-purple-600"></i>
+                                <span>72 hours of video content</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-alt text-purple-600"></i>
+                                <span>120 downloadable resources</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-project-diagram text-purple-600"></i>
+                                <span>10 hands-on projects</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-server text-purple-600"></i>
+                                <span>GPU cloud access</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-infinity text-purple-600"></i>
+                                <span>Lifetime access</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="preview-certificate" class="w-full mt-6 bg-purple-100 text-purple-600 py-3 rounded-lg font-semibold hover:bg-purple-200 transition-colors">
+                        <i class="fas fa-eye mr-2"></i>Preview Certificate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Hands-On Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Image Classification CNN</h3>
+                        <p class="text-gray-600 mb-4">Build a CNN model to classify images with 95% accuracy</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-purple-600 font-medium">Intermediate</span>
+                            <span class="text-sm text-gray-500">2 weeks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Text Generation RNN</h3>
+                        <p class="text-gray-600 mb-4">Create an LSTM model to generate creative text</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-purple-600 font-medium">Advanced</span>
+                            <span class="text-sm text-gray-500">3 weeks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
+                         alt="Project" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Style Transfer GAN</h3>
+                        <p class="text-gray-600 mb-4">Build a GAN to transfer artistic styles to images</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-purple-600 font-medium">Expert</span>
+                            <span class="text-sm text-gray-500">4 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Covered -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Technologies You'll Master</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="text-center">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-fire text-orange-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">TensorFlow</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-bolt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">PyTorch</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-brain text-green-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">Keras</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-cube text-purple-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">OpenCV</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-red-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-chart-line text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">TensorBoard</h4>
+                </div>
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-cloud text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-semibold text-gray-800">AWS SageMaker</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Comprehensive Curriculum</h2>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-purple-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 1: Neural Network Foundations</h3>
+                        <p class="text-purple-100 mt-2">Understanding the mathematics and architecture of neural networks</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>Introduction to Deep Learning</span>
+                            </div>
+                            <span class="text-sm text-gray-500">45 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-code text-green-600"></i>
+                                <span>Math Behind Neural Networks</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Lab</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>Forward and Backpropagation</span>
+                            </div>
+                            <span class="text-sm text-gray-500">60 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-purple-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 2: Convolutional Neural Networks</h3>
+                        <p class="text-purple-100 mt-2">Building CNNs for image recognition and computer vision</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>CNN Architecture Explained</span>
+                            </div>
+                            <span class="text-sm text-gray-500">55 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>Build Image Classifier</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Project</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>Transfer Learning with Pre-trained Models</span>
+                            </div>
+                            <span class="text-sm text-gray-500">50 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-purple-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 3: Recurrent Neural Networks</h3>
+                        <p class="text-purple-100 mt-2">Mastering sequence modeling with RNNs, LSTMs, and GRUs</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>RNN Fundamentals</span>
+                            </div>
+                            <span class="text-sm text-gray-500">40 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>LSTM and GRU Networks</span>
+                            </div>
+                            <span class="text-sm text-gray-500">65 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>Build Sentiment Analysis Model</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-purple-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 4: Transformers and Attention</h3>
+                        <p class="text-purple-100 mt-2">Modern architectures for NLP and beyond</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>Attention Mechanism</span>
+                            </div>
+                            <span class="text-sm text-gray-500">70 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-purple-600"></i>
+                                <span>Transformer Architecture</span>
+                            </div>
+                            <span class="text-sm text-gray-500">80 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>Build Language Translation Model</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Capstone</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-4xl w-full p-8 relative">
+            <button onclick="document.getElementById('certificate-modal').classList.add('hidden')" 
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Certificate Preview</h3>
+                <div class="border-4 border-purple-600 rounded-lg p-8 bg-gradient-to-br from-purple-50 to-pink-50">
+                    <div class="mb-6">
+                        <i class="fas fa-brain text-6xl text-purple-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Certificate of Advanced Completion</h2>
+                    <p class="text-lg text-gray-600 mb-6">This is to certify that</p>
+                    <div class="border-b-2 border-gray-300 pb-2 mb-6">
+                        <p class="text-2xl font-bold text-purple-600">Your Name</p>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-2">has successfully completed the advanced course</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">Deep Learning & Neural Networks</h3>
+                    <div class="flex justify-center space-x-8 mb-6">
+                        <div>
+                            <p class="text-sm text-gray-500">Duration</p>
+                            <p class="font-semibold">12 Weeks</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Completion Date</p>
+                            <p class="font-semibold">December 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Grade</p>
+                            <p class="font-semibold">A+</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-12">
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Instructor Signature</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Director Signature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-400"></i>
+                        <span class="text-xl font-bold">EduTechRitt<span class="text-indigo-400">AI</span></span>
+                    </div>
+                    <p class="text-gray-400">
+                        Advanced AI education for tomorrow's innovators.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../index.html#courses" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="#curriculum" class="hover:text-white transition-colors">Curriculum</a></li>
+                        <li><a href="../index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Documentation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">GPU Access</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">
+                        info@edutechritt.com<br>
+                        +234 (080) 2415-5919
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EduTechRitt AI Training Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/course.js"></script>
+</body>
+</html>

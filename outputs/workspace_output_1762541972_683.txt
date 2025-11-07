@@ -1,0 +1,17 @@
+total 376
+drwxr-xr-x 4 root root  4096 Nov  7 18:56 .
+drwxr-xr-x 6 root root    98 Nov  7 18:38 ..
+-rw-r--r-- 1 root root 36906 Nov  7 18:54 advanced-css.html
+-rw-r--r-- 1 root root 44326 Nov  7 18:39 computer-vision-ai.html
+drwxr-xr-x 2 root root    10 Nov  7 18:38 css
+-rw-r--r-- 1 root root 33422 Nov  7 18:54 data-science-python.html
+-rw-r--r-- 1 root root 33121 Nov  7 18:38 deep-learning-neural-networks.html
+-rw-r--r-- 1 root root 37723 Nov  7 18:54 html-fundamentals.html
+-rw-r--r-- 1 root root 39578 Nov  7 18:58 index.html
+-rw-r--r-- 1 root root 37728 Nov  7 18:54 javascript-mastery.html
+drwxr-xr-x 2 root root    31 Nov  7 18:38 js
+-rw-r--r-- 1 root root 32065 Nov  7 18:38 large-language-models-gpt.html
+-rw-r--r-- 1 root root 46339 Nov  7 18:38 machine-learning-fundamentals.html
+-rw-r--r-- 1 root root    87 Nov  7 18:56 react-development-complete.html
+-rw-r--r-- 1 root root  7612 Nov  7 18:58 react-development.html
+-rw-r--r-- 1 root root    87 Nov  7 18:55 react-native.html

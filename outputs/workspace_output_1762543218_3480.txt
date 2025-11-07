@@ -1,0 +1,8 @@
+root         102  0.0  0.0  37092 30276 pts/0    S+   19:19   0:00 /usr/bin/python3 /usr/bin/supervisord -n -c /etc/supervisor/conf.d/supervisord.conf
+root         127  0.0  0.0 150644 63820 pts/0    Sl   19:19   0:00 python /app/browser_api.py
+root         129  0.0  0.0  55776 47584 pts/0    S    19:19   0:00 python /app/server.py
+root         255  0.0  0.0  14596 11292 pts/0    S    19:19   0:00 /usr/local/bin/python -c from multiprocessing.resource_tracker import main;main(4)
+root         257  0.0  0.0  55752 47672 pts/0    S    19:19   0:00 /usr/local/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=5, pipe_handle=7) --multiprocessing-fork
+root         258  0.0  0.0 1255412 70520 pts/0   Sl   19:19   0:00 /usr/local/lib/python3.11/site-packages/playwright/driver/node /usr/local/lib/python3.11/site-packages/playwright/driver/package/cli.js run-driver
+root         489  0.0  0.0  28012 21560 pts/0    S    19:19   0:00 python3 -m websockify --web /opt/novnc 0.0.0.0:6080 localhost:5901
+root         602  0.0  0.0   3752  1548 pts/0    S+   19:20   0:00 grep python

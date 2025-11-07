@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Fundamentals - EduTechRitt AI Training Center</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #f97316 0%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #f97316 0%, #f59e0b 100%);
+        }
+        .code-preview {
+            background: #1e293b;
+            color: #e2e8f0;
+            font-family: 'Courier New', monospace;
+        }
+        .code-tag { color: #f97316; }
+        .code-attr { color: #60a5fa; }
+        .code-text { color: #86efac; }
+    </style>
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full bg-white shadow-md z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <a href="../index.html" class="flex items-center space-x-2">
+                        <i class="fas fa-graduation-cap text-3xl text-indigo-600"></i>
+                        <span class="text-2xl font-bold text-gray-800">EduTechRitt<span class="text-indigo-600">AI</span></span>
+                    </a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
+                    <a href="index.html" class="text-gray-700 hover:text-indigo-600 transition-colors">Courses</a>
+                    <a href="#curriculum" class="text-gray-700 hover:text-indigo-600 transition-colors">Curriculum</a>
+                    <a href="#projects" class="text-gray-700 hover:text-indigo-600 transition-colors">Projects</a>
+                    <a href="#preview" class="text-gray-700 hover:text-indigo-600 transition-colors">Code Preview</a>
+                    <a href="../index.html#contact" class="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+                    <a href="../index.html#login" class="text-indigo-600 hover:text-indigo-700 font-medium transition-colors">Login</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-24 pb-20">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Beginner Friendly</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">6 Weeks</span>
+                        <span class="bg-white/20 px-3 py-1 rounded-full text-sm">Certificate</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        HTML Fundamentals
+                    </h1>
+                    <p class="text-xl mb-8 text-white/90">
+                        Master the foundation of web development with modern HTML5. Learn semantic markup, forms, multimedia, and build responsive websites from scratch.
+                    </p>
+                    <div class="flex items-center space-x-6 mb-8">
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-star text-yellow-400"></i>
+                            <span class="font-semibold">4.7 (1,234 reviews)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <i class="fas fa-users"></i>
+                            <span>5,678 students enrolled</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button id="enroll-btn" class="bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-all transform hover:scale-105">
+                            Enroll Now - $199
+                        </button>
+                        <button id="add-to-cart" class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-orange-600 transition-all">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                <div>
+                    <div class="code-preview rounded-lg p-4 text-sm">
+                        <div><span class="code-tag">&lt;!DOCTYPE</span> html<span class="code-tag">&gt;</span></div>
+                        <div><span class="code-tag">&lt;html</span> <span class="code-attr">lang=</span><span class="code-text">"en"</span><span class="code-tag">&gt;</span></div>
+                        <div class="ml-4"><span class="code-tag">&lt;head&gt;</span></div>
+                        <div class="ml-8"><span class="code-tag">&lt;title&gt;</span><span class="code-text">My First Page</span><span class="code-tag">&lt;/title&gt;</span></div>
+                        <div class="ml-4"><span class="code-tag">&lt;/head&gt;</span></div>
+                        <div class="ml-4"><span class="code-tag">&lt;body&gt;</span></div>
+                        <div class="ml-8"><span class="code-tag">&lt;h1&gt;</span><span class="code-text">Hello World!</span><span class="code-tag">&lt;/h1&gt;</span></div>
+                        <div class="ml-4"><span class="code-tag">&lt;/body&gt;</span></div>
+                        <div><span class="code-tag">&lt;/html&gt;</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+                <div class="lg:col-span-2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Master Modern Web Development</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-code text-orange-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">HTML5 Essentials</h3>
+                                <p class="text-gray-600">Learn semantic markup and modern HTML5 features</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-mobile-alt text-blue-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Responsive Design</h3>
+                                <p class="text-gray-600">Build mobile-friendly websites with viewport meta</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-table text-green-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Tables & Forms</h3>
+                                <p class="text-gray-600">Create data tables and interactive web forms</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-photo-video text-purple-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Multimedia</h3>
+                                <p class="text-gray-600">Embed images, videos, and audio elements</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-universal-access text-red-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Accessibility</h3>
+                                <p class="text-gray-600">Build accessible websites for all users</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <i class="fas fa-project-diagram text-indigo-500 text-xl mt-1"></i>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Real Projects</h3>
+                                <p class="text-gray-600">Build portfolio-ready websites</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course Info Card -->
+                <div class="bg-gray-50 rounded-xl p-6 h-fit">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Course Details</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-clock text-gray-600"></i>
+                                <span class="text-gray-700">Duration</span>
+                            </div>
+                            <span class="font-semibold">6 Weeks</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-signal text-gray-600"></i>
+                                <span class="text-gray-700">Level</span>
+                            </div>
+                            <span class="font-semibold">Beginner</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-laptop text-gray-600"></i>
+                                <span class="text-gray-700">Prerequisites</span>
+                            </div>
+                            <span class="font-semibold">None</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-certificate text-gray-600"></i>
+                                <span class="text-gray-700">Certificate</span>
+                            </div>
+                            <span class="font-semibold">Yes</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-users text-gray-600"></i>
+                                <span class="text-gray-700">Students</span>
+                            </div>
+                            <span class="font-semibold">5,678</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-star text-gray-600"></i>
+                                <span class="text-gray-700">Rating</span>
+                            </div>
+                            <span class="font-semibold">4.7/5</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 pt-6 border-t border-gray-200">
+                        <h4 class="font-semibold text-gray-800 mb-3">This course includes:</h4>
+                        <div class="space-y-2 text-sm text-gray-700">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-video text-orange-600"></i>
+                                <span>32 hours of video content</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-file-alt text-orange-600"></i>
+                                <span>45 downloadable resources</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>5 hands-on projects</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-code text-orange-600"></i>
+                                <span>Code examples and templates</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-infinity text-orange-600"></i>
+                                <span>Lifetime access</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button id="preview-certificate" class="w-full mt-6 bg-orange-100 text-orange-600 py-3 rounded-lg font-semibold hover:bg-orange-200 transition-colors">
+                        <i class="fas fa-eye mr-2"></i>Preview Certificate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Code Preview Section -->
+    <section id="preview" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Interactive Code Learning</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Write HTML Code</h3>
+                    <div class="code-preview rounded-lg p-4 text-sm h-64 overflow-auto">
+                        <div><span class="code-tag">&lt;div</span> <span class="code-attr">class=</span><span class="code-text">"container"</span><span class="code-tag">&gt;</span></div>
+                        <div>  <span class="code-tag">&lt;h1&gt;</span><span class="code-text">Welcome to HTML</span><span class="code-tag">&lt;/h1&gt;</span></div>
+                        <div>  <span class="code-tag">&lt;p&gt;</span><span class="code-text">Learn to build amazing websites!</span><span class="code-tag">&lt;/p&gt;</span></div>
+                        <div>  <span class="code-tag">&lt;button</span> <span class="code-attr">onclick=</span><span class="code-text">"alert('Hello!')"</span><span class="code-tag">&gt;</span></div>
+                        <div>    Click Me</div>
+                        <div>  <span class="code-tag">&lt;/button&gt;</span></div>
+                        <div><span class="code-tag">&lt;/div&gt;</span></div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Live Preview</h3>
+                    <div class="border-2 border-gray-200 rounded-lg p-4 h-64 bg-gray-50">
+                        <h1 class="text-2xl font-bold text-gray-800 mb-2">Welcome to HTML</h1>
+                        <p class="text-gray-600 mb-4">Learn to build amazing websites!</p>
+                        <button class="bg-orange-600 text-white px-4 py-2 rounded hover:bg-orange-700 transition-colors" onclick="alert('Hello!')">
+                            Click Me
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Build Your Portfolio</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-orange-600 text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">Personal Portfolio</h3>
+                        <p class="text-orange-100">Create your own website portfolio</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Semantic HTML structure</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Navigation and sections</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Contact form</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-orange-600 font-medium">Beginner</span>
+                            <span class="text-sm text-gray-500">1 week</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-600 text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">Restaurant Website</h3>
+                        <p class="text-blue-100">Build a complete restaurant website</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Menu sections</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Image galleries</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Reservation form</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-orange-600 font-medium">Intermediate</span>
+                            <span class="text-sm text-gray-500">2 weeks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                    <div class="bg-green-600 text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">Blog Template</h3>
+                        <p class="text-green-100">Create a modern blog layout</p>
+                    </div>
+                    <div class="p-6">
+                        <div class="space-y-3 mb-4">
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Article structure</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Sidebar widgets</span>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <i class="fas fa-check-circle text-green-500"></i>
+                                <span class="text-gray-700">Comment sections</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-orange-600 font-medium">Intermediate</span>
+                            <span class="text-sm text-gray-500">2 weeks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HTML5 Features -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Modern HTML5 Features</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marked-alt text-orange-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Semantic Elements</h3>
+                    <p class="text-gray-600">Header, nav, main, article, section, aside, footer</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-palette text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Canvas & SVG</h3>
+                    <p class="text-gray-600">Draw graphics and animations directly in HTML</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-film text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Video & Audio</h3>
+                    <p class="text-gray-600">Native multimedia elements without plugins</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-database text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Local Storage</h3>
+                    <p class="text-gray-600">Store data client-side with localStorage</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-red-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-pin-alt text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Geolocation</h3>
+                    <p class="text-gray-600">Access user location with browser APIs</p>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 shadow-lg text-center hover:shadow-xl transition-shadow">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-universal-access text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">ARIA Attributes</h3>
+                    <p class="text-gray-600">Build accessible web applications</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section id="curriculum" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Comprehensive Curriculum</h2>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-orange-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 1: HTML Basics & Structure</h3>
+                        <p class="text-orange-100 mt-2">Foundation of web development</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Introduction to HTML and Web Development</span>
+                            </div>
+                            <span class="text-sm text-gray-500">30 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-code text-blue-600"></i>
+                                <span>Your First HTML Document</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Lab</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>HTML Elements and Tags</span>
+                            </div>
+                            <span class="text-sm text-gray-500">45 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-orange-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 2: Text & Formatting</h3>
+                        <p class="text-orange-100 mt-2">Working with text content</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Headings and Paragraphs</span>
+                            </div>
+                            <span class="text-sm text-gray-500">25 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Text Formatting and Emphasis</span>
+                            </div>
+                            <span class="text-sm text-gray-500">35 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>Build Article Page</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="bg-orange-600 text-white p-6">
+                        <h3 class="text-xl font-bold">Module 3: Links & Navigation</h3>
+                        <p class="text-orange-100 mt-2">Creating connected web pages</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Absolute and Relative Links</span>
+                            </div>
+                            <span class="text-sm text-gray-500">40 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3 border-b">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-play-circle text-orange-600"></i>
+                                <span>Navigation Menus and Anchors</span>
+                            </div>
+                            <span class="text-sm text-gray-500">50 min</span>
+                        </div>
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center space-x-3">
+                                <i class="fas fa-project-diagram text-orange-600"></i>
+                                <span>Create Multi-Page Website</span>
+                            </div>
+                            <span class="text-sm text-gray-500">Capstone</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Modal -->
+    <div id="certificate-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-4xl w-full p-8 relative">
+            <button onclick="document.getElementById('certificate-modal').classList.add('hidden')" 
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+            <div class="text-center">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Certificate Preview</h3>
+                <div class="border-4 border-orange-600 rounded-lg p-8 bg-gradient-to-br from-orange-50 to-yellow-50">
+                    <div class="mb-6">
+                        <i class="fas fa-code text-6xl text-orange-600"></i>
+                    </div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Certificate of Completion</h2>
+                    <p class="text-lg text-gray-600 mb-6">This is to certify that</p>
+                    <div class="border-b-2 border-gray-300 pb-2 mb-6">
+                        <p class="text-2xl font-bold text-orange-600">Your Name</p>
+                    </div>
+                    <p class="text-lg text-gray-600 mb-2">has successfully completed the course</p>
+                    <h3 class="text-xl font-bold text-gray-800 mb-6">HTML Fundamentals</h3>
+                    <div class="flex justify-center space-x-8 mb-6">
+                        <div>
+                            <p class="text-sm text-gray-500">Duration</p>
+                            <p class="font-semibold">6 Weeks</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Completion Date</p>
+                            <p class="font-semibold">December 2024</p>
+                        </div>
+                        <div>
+                            <p class="text-sm text-gray-500">Grade</p>
+                            <p class="font-semibold">A+</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-center space-x-12">
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Instructor Signature</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-32 h-1 bg-gray-400 mb-2"></div>
+                            <p class="text-sm text-gray-600">Director Signature</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fas fa-graduation-cap text-2xl text-indigo-400"></i>
+                        <span class="text-xl font-bold">EduTechRitt<span class="text-indigo-400">AI</span></span>
+                    </div>
+                    <p class="text-gray-400">
+                        Start your web development journey with HTML fundamentals.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="../index.html" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="index.html" class="hover:text-white transition-colors">Courses</a></li>
+                        <li><a href="#curriculum" class="hover:text-white transition-colors">Curriculum</a></li>
+                        <li><a href="../index.html#contact" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#projects" class="hover:text-white transition-colors">Projects</a></li>
+                        <li><a href="#preview" class="hover:text-white transition-colors">Code Preview</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Code Examples</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-codepen text-xl"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400">
+                        info@edutechritt.com<br>
+                        +234 (080) 2415-5919
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 EduTechRitt AI Training Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/course.js"></script>
+</body>
+</html>
