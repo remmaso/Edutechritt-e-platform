@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduTechRitt — AI for Oil & Gas Training</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue-900:#0a2a6b; /* deep corporate blue */
+      --blue-700:#0d47a1; /* primary */
+      --blue-600:#1565c0;
+      --blue-100:#e8f1ff;
+      --teal:#00b894;
+      --ink:#0a2540;
+      --muted:#5f6c7b;
+      --card:#ffffff;
+      --bg:#f6f9fc;
+      --ring: rgba(13,71,161,.25);
+      --shadow:0 10px 30px rgba(13,71,161,.12);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}
+    /* NAV */
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;color:var(--blue-900)}
+    .brand img{height:46px;width:auto;object-fit:contain}
+    .cta{display:inline-flex;align-items:center;gap:10px;background:var(--blue-700);color:#fff;padding:12px 18px;border-radius:12px;font-weight:600;box-shadow:var(--shadow)}
+    .cta:hover{background:var(--blue-600)}
+    /* HERO */
+    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--blue-900),var(--blue-700));color:#fff}
+    .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;padding:56px 0}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.09);padding:8px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;font-weight:600}
+    .hero h1{font-size:40px;line-height:1.15;margin:16px 0 12px}
+    .hero p{opacity:.92;font-size:18px}
+    .hero-card{background:#fff;color:var(--ink);border-radius:18px;box-shadow:var(--shadow);padding:22px}
+    .hero-list{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+    .chip{background:var(--blue-100);color:var(--blue-900);border-radius:999px;padding:8px 12px;font-weight:600;font-size:14px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .cta-sec{background:#fff;color:var(--blue-700);border:2px solid #fff}
+    .cta-whatsapp{background:#25D366;color:#0a2a12}
+    /* SECTIONS */
+    section{padding:56px 0}
+    h2{font-size:28px;margin:0 0 10px;color:var(--blue-900)}
+    .muted{color:var(--muted)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:var(--card);border-radius:18px;box-shadow:var(--shadow);padding:18px}
+    .card h3{margin:6px 0 8px;font-size:18px;color:var(--blue-900)}
+    .pill{display:inline-block;background:var(--blue-100);color:var(--blue-900);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;margin-right:6px;margin-bottom:6px}
+    .bullets{padding-left:18px;margin:8px 0}
+    .bullets li{margin:6px 0}
+    /* CTA BLOCK */
+    .cta-block{background:linear-gradient(135deg,var(--blue-700),var(--blue-900));color:#fff;border-radius:22px;box-shadow:var(--shadow);padding:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
+    .cta-block .btn{background:#fff;color:var(--blue-700);padding:12px 16px;border-radius:12px;font-weight:700}
+    .cta-block .btn:hover{background:#f1f5ff}
+    footer{padding:28px 0;color:#5b6b7a}
+    @media (max-width:980px){.hero-inner{grid-template-columns:1fr}.grid-3{grid-template-columns:1fr 1fr}.grid-4{grid-template-columns:1fr 1fr}.brand img{height:40px}}
+    @media (max-width:620px){.grid-3,.grid-4{grid-template-columns:1fr}.hero h1{font-size:32px}}
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <div class="container nav">
+    <div class="brand">
+      <!-- If the logo doesn't display in preview, replace the src with your hosted URL later. -->
+      <img src="/mnt/data/dbfcba62-f2ee-44e8-b4a9-13995b0ca8e6.png" alt="EduTechRitt Logo" />
+      <span>EduTechRitt</span>
+    </div>
+    <a class="cta" href="https://wa.me/2348024155919" target="_blank" rel="noopener">Request Training on WhatsApp</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div>
+        <span class="badge">AI • Data • Reliability</span>
+        <h1>AI-Powered Training for Oil & Gas Operations</h1>
+        <p>Upskill engineers, technicians, and managers to reduce downtime, optimize production, and make faster decisions using data, machine learning, and industrial IoT.</p>
+        <div class="cta-row">
+          <a class="cta cta-whatsapp" href="https://wa.me/2348024155919" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a class="cta cta-sec" href="#programs">View Programs</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <h3 style="margin:0 0 6px;color:var(--blue-900)">High-Impact Outcomes</h3>
+        <ul class="bullets">
+          <li>Predict equipment failure <strong>before</strong> it happens (predictive maintenance)</li>
+          <li>Turn SCADA/PI historian data into live dashboards</li>
+          <li>Optimize refinery processes with ML-driven tuning</li>
+          <li>Detect pipeline leaks early with anomaly detection</li>
+        </ul>
+        <div class="hero-list">
+          <span class="chip">Hands‑on Labs</span>
+          <span class="chip">Real Plant Data</span>
+          <span class="chip">Onsite or Live Online</span>
+          <span class="chip">Certificate Included</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs">
+    <div class="container">
+      <h2>AI-Enabled Training Programs</h2>
+      <p class="muted">Designed for refineries, gas plants, pipelines, LNG facilities, and offshore operations.</p>
+      <div class="grid-3" style="margin-top:16px">
+        <div class="card">
+          <h3>Predictive Maintenance with AI & IoT</h3>
+          <p class="muted">Use vibration, pressure, temperature and run‑hours data to predict failures and plan maintenance.</p>
+          <div>
+            <span class="pill">Python</span>
+            <span class="pill">Anomaly Detection</span>
+            <span class="pill">OPC‑UA / MQTT</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>SCADA & PI System Data Analytics</h3>
+          <p class="muted">Transform control‑room and historian data into actionable dashboards for reliability and production.</p>
+          <div>
+            <span class="pill">Time‑Series</span>
+            <span class="pill">Power BI</span>
+            <span class="pill">Dashboards</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Process Optimization with Machine Learning</h3>
+          <p class="muted">Model and tune flow, temperature, compressor efficiency and set‑points to reduce energy costs.</p>
+          <div>
+            <span class="pill">ML Regression</span>
+            <span class="pill">Digital Twins</span>
+            <span class="pill">Simulation</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Pipeline Leak Detection with AI</h3>
+          <p class="muted">Detect pressure/acoustic anomalies early to prevent incidents and product loss.</p>
+          <div>
+            <span class="pill">Anomaly Models</span>
+            <span class="pill">Edge AI</span>
+            <span class="pill">Event Alarms</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Asset Integrity & Reliability Analytics</h3>
+          <p class="muted">Apply MTBF/MTTR, Weibull, and risk‑based maintenance to extend asset life and reduce downtime.</p>
+          <div>
+            <span class="pill">Reliability</span>
+            <span class="pill">Weibull</span>
+            <span class="pill">RCFA</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Computer Vision & Drone Inspection</h3>
+          <p class="muted">Automate corrosion, spill and anomaly detection with image AI from drone or CCTV feeds.</p>
+          <div>
+            <span class="pill">OpenCV</span>
+            <span class="pill">YOLO</span>
+            <span class="pill">MLOps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE TRAIN / DELIVERY -->
+  <section>
+    <div class="container grid-4">
+      <div class="card">
+        <h3>Who We Train</h3>
+        <ul class="bullets">
+          <li>Mechanical / Process / Petroleum / Instrumentation Engineers</li>
+          <li>SCADA & Control Room Operators</li>
+          <li>Maintenance Planners & Reliability Teams</li>
+          <li>Supervisors & Technical Managers</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Delivery Options</h3>
+        <ul class="bullets">
+          <li>Onsite at your facility</li>
+          <li>Live online (instructor‑led)</li>
+          <li>Hybrid (onsite + virtual)</li>
+          <li>Post‑training project support</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Tools & Tech</h3>
+        <ul class="bullets">
+          <li>Python, SQL, Power BI</li>
+          <li>Time‑series historians (PI System, Ignition)</li>
+          <li>IoT (OPC‑UA, MQTT), Edge AI</li>
+          <li>Computer Vision (OpenCV, YOLO)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Business Impact</h3>
+        <ul class="bullets">
+          <li>Reduced unplanned downtime</li>
+          <li>Optimized energy & throughput</li>
+          <li>Improved safety & compliance</li>
+          <li>Faster, data‑driven decisions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG CTA -->
+  <section>
+    <div class="container cta-block">
+      <div>
+        <h2 style="color:#fff;margin:0 0 6px">Ready to upskill your Oil & Gas teams?</h2>
+        <p style="margin:0;opacity:.95">Chat with EduTechRitt to schedule corporate training or request a tailored proposal.</p>
+      </div>
+      <a class="btn" href="https://wa.me/2348024155919" target="_blank" rel="noopener">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;justify-content:space-between">
+        <div style="display:flex;align-items:center;gap:10px">
+          <img src="/mnt/data/dbfcba62-f2ee-44e8-b4a9-13995b0ca8e6.png" alt="EduTechRitt" style="height:30px"/>
+          <span>EduTechRitt — AI Training • Software Engineering</span>
+        </div>
+        <div class="muted">KM 38 Lekki‑Epe Expressway, Eputu Mall, Lekki, Lagos • info@edutechritt.com • +234 802 415 5919</div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
