@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EduTechRitt — December Holiday Tech Bootcamp (Dec 9)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="EduTechRitt December Holiday Tech Bootcamp — Robotics, AI, Web, Data, Cybersecurity, UI/UX, Drone & more. Starts Dec 9. Enroll via WhatsApp."/>
+  <style>
+    /* Minor custom styles */
+    .hero-bg {
+      background: linear-gradient(90deg, rgba(12,63,255,0.06), rgba(0,200,140,0.04));
+    }
+    .glass {
+      backdrop-filter: blur(6px);
+      background: rgba(255,255,255,0.55);
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-800">
+
+  <!-- NAV / HEADER -->
+  <header class="sticky top-0 z-50 bg-white/80 border-b border-slate-200 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-md flex items-center justify-center bg-gradient-to-tr from-indigo-600 to-teal-400 text-white font-bold">ET</div>
+        <div>
+          <div class="font-semibold">EduTechRitt</div>
+          <div class="text-xs text-slate-500">December Holiday Tech Bootcamp</div>
+        </div>
+      </div>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#courses" class="hover:underline">Courses</a>
+        <a href="#schedule" class="hover:underline">Schedule</a>
+        <a href="#pricing" class="hover:underline">Pricing</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="#contact" class="text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-md">Enroll Now</a>
+      </nav>
+
+      <button id="mobileMenuBtn" class="md:hidden p-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-slate-700" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu (hidden by default) -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200">
+      <div class="px-4 py-3 flex flex-col gap-2">
+        <a href="#courses" class="block">Courses</a>
+        <a href="#schedule" class="block">Schedule</a>
+        <a href="#pricing" class="block">Pricing</a>
+        <a href="#faq" class="block">FAQ</a>
+        <a href="#contact" class="block text-indigo-600 font-semibold">Enroll Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+          December Holiday Tech Bootcamp — <span class="text-indigo-600">Starts Dec 9</span>
+        </h1>
+        <p class="mt-4 text-slate-600">
+          Keep students productive this December — hands-on bootcamps for kids, teens, graduates, and working professionals.
+          Robotics, AI, Web Dev, Data Analysis, Cybersecurity, UI/UX, Drone Piloting and more.
+        </p>
+
+        <div class="mt-6 flex gap-3 flex-wrap">
+          <a id="enrollBtnTop" href="#" class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3 rounded-md shadow">
+            Enroll Now via WhatsApp
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21.8 19.2a10.7 10.7 0 10-1.6 1.6l1-3.6 2.2-2.2-1.9-1.9-2.2 2.2-.9 3.6zM12 2C6.5 2 2 6.4 2 12c0 2.1.6 4.1 1.8 5.9L2 22l4.2-1.7C8 21.6 10 22 12 22c5.5 0 10-4.4 10-10S17.5 2 12 2z"/>
+            </svg>
+          </a>
+
+          <a href="#courses" class="inline-flex items-center gap-2 px-4 py-3 border rounded-md">
+            View Courses
+          </a>
+        </div>
+
+        <div class="mt-6 text-sm text-slate-500">
+          <strong>Location:</strong> EduTechRitt AI Training Center, KM 38 Lekki-Epe Expressway, Eputu Mall, Lekki, Lagos.<br />
+          <strong>Contact:</strong> 08024155919
+        </div>
+      </div>
+
+      <div class="p-6 glass rounded-2xl shadow-sm">
+        <h3 class="font-semibold mb-3">Why join this December?</h3>
+        <ul class="space-y-2 text-slate-600">
+          <li>✅ Longer holidays = more time for meaningful learning</li>
+          <li>✅ Project-based learning — students build real products</li>
+          <li>✅ Careful child safety & small class sizes for kids</li>
+          <li>✅ Certificate of completion & demo day for parents</li>
+        </ul>
+        <div class="mt-4">
+          <div class="text-xs text-slate-500">Seats limited — class sizes capped for quality</div>
+          <div class="mt-3 text-sm">
+            <strong>Early bird:</strong> 10% off for registrations before Nov 30.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section id="courses" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">Courses (All tracks available)</h2>
+    <p class="text-slate-600 mb-6">We will run multiple tracks suitable for kids, teens, graduates, and working adults. Below are some of the courses available during the bootcamp.</p>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Course Card -->
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">Robotics for Kids</h3>
+        <p class="text-sm text-slate-600 mt-2">Hands-on robots, block-based and Python programming, sensors & challenges.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">Coding for Kids (Scratch & Python)</h3>
+        <p class="text-sm text-slate-600 mt-2">Creative game-building and step-by-step introduction to Python.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">Web Development (HTML/CSS/JS)</h3>
+        <p class="text-sm text-slate-600 mt-2">Build real websites and deploy them; beginner-to-intermediate.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">AI & Machine Learning</h3>
+        <p class="text-sm text-slate-600 mt-2">Foundations of ML, hands-on with practical projects and notebooks.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">Data Analysis (Python + Excel)</h3>
+        <p class="text-sm text-slate-600 mt-2">Cleaning, visualization, and basic analytics for real datasets.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">Cybersecurity Fundamentals</h3>
+        <p class="text-sm text-slate-600 mt-2">Security basics, safe browsing, and ethical hacking fundamentals.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">UI/UX Design (Figma)</h3>
+        <p class="text-sm text-slate-600 mt-2">Design thinking, wireframes, and prototyping with Figma.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">Digital Marketing & AI Tools</h3>
+        <p class="text-sm text-slate-600 mt-2">Social media, basic SEO, and AI-assisted content creation.</p>
+      </div>
+
+      <div class="border rounded-lg p-5 shadow-sm">
+        <h3 class="font-semibold">Drone Piloting & Basics</h3>
+        <p class="text-sm text-slate-600 mt-2">Drone safety, controls, and simple aerial missions (age-limited).</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section id="schedule" class="bg-slate-50 py-10">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">Bootcamp Schedule (Suggested)</h2>
+      <p class="text-slate-600 mb-6">Start date: <strong>Dec 9</strong>. We recommend a 2-3 week format to fit most holiday calendars. Below is a sample schedule — you can run multiple parallel tracks across age groups.</p>
+
+      <div class="grid md:grid-cols-3 gap-4">
+        <div class="p-4 border rounded-lg">
+          <h4 class="font-semibold">Week 1</h4>
+          <ul class="text-sm text-slate-600 mt-2">
+            <li>Intro & basics — small projects</li>
+            <li>Foundations: Scratch / HTML / Python</li>
+            <li>Safety & orientation for kids</li>
+          </ul>
+        </div>
+
+        <div class="p-4 border rounded-lg">
+          <h4 class="font-semibold">Week 2</h4>
+          <ul class="text-sm text-slate-600 mt-2">
+            <li>Intermediate projects — group work</li>
+            <li>AI & Robotics practical sessions</li>
+            <li>Guest talk / industry demo</li>
+          </ul>
+        </div>
+
+        <div class="p-4 border rounded-lg">
+          <h4 class="font-semibold">Week 3 (Demo Week)</h4>
+          <ul class="text-sm text-slate-600 mt-2">
+            <li>Project finalization</li>
+            <li>Parents demo day & certificate ceremony</li>
+            <li>Showcase + graduation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">Pricing & Offers</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border rounded-lg p-5">
+        <h3 class="font-semibold">Kids & Teens (per course)</h3>
+        <div class="mt-3 text-lg font-bold">₦30,000 — ₦60,000</div>
+        <p class="text-sm text-slate-600 mt-2">Depends on length & materials included.</p>
+      </div>
+
+      <div class="border rounded-lg p-5">
+        <h3 class="font-semibold">Youth & Adults</h3>
+        <div class="mt-3 text-lg font-bold">₦40,000 — ₦70,000</div>
+        <p class="text-sm text-slate-600 mt-2">Includes certificate & demo day.</p>
+      </div>
+
+      <div class="border rounded-lg p-5">
+        <h3 class="font-semibold">Special Offers</h3>
+        <ul class="text-sm text-slate-600 mt-2">
+          <li>10% Early bird (register by Nov 30)</li>
+          <li>Group Discount for 3 or more students</li>
+          <li>Family Package & sibling discounts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="bg-gradient-to-r from-indigo-50 to-white py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">What parents & students say</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <blockquote class="p-4 border rounded-lg">
+          “My daughter learned robotics and built her first robot — the instructors were patient and hands-on.”<br/>
+          <cite class="block mt-3 text-sm text-slate-600">— Mrs. A. Chukwuma (Parent)</cite>
+        </blockquote>
+
+        <blockquote class="p-4 border rounded-lg">
+          “Great bootcamp — I built a portfolio website and got a certificate that helped me land an internship.”<br/>
+          <cite class="block mt-3 text-sm text-slate-600">— Ifeanyi (Graduate)</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="max-w-6xl mx-auto px-4 py-12">
+    <h2 class="text-2xl font-bold mb-4">FAQ</h2>
+    <div class="space-y-4">
+      <details class="p-4 border rounded-lg">
+        <summary class="font-semibold">What are the age groups?</summary>
+        <div class="mt-2 text-sm text-slate-600">We run kids (7–12), teens (13–17), youth (18–25) and adults tracks. Some courses have age limits (e.g., drone piloting).</div>
+      </details>
+
+      <details class="p-4 border rounded-lg">
+        <summary class="font-semibold">How do I enroll?</summary>
+        <div class="mt-2 text-sm text-slate-600">Click "Enroll Now via WhatsApp" and send the pre-filled message — our admin will reply with payment instructions and confirmation.</div>
+      </details>
+
+      <details class="p-4 border rounded-lg">
+        <summary class="font-semibold">Are there payment plans?</summary>
+        <div class="mt-2 text-sm text-slate-600">Yes — we offer flexible plans for some adult courses. Contact us for details.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT / ENROLL -->
+  <section id="contact" class="bg-slate-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-2xl font-bold">Ready to enroll? Contact us on WhatsApp</h3>
+        <p class="mt-2 text-slate-300">For quick registration and assistance, message our WhatsApp line and mention the course you want.</p>
+
+        <div class="mt-6 flex gap-4">
+          <a id="enrollBtnBottom" href="#" class="inline-flex items-center gap-3 bg-emerald-400 hover:bg-emerald-500 text-slate-900 px-5 py-3 rounded-md font-semibold">
+            Enroll via WhatsApp
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M21.8 19.2a10.7 10.7 0 10-1.6 1.6l1-3.6 2.2-2.2-1.9-1.9-2.2 2.2-.9 3.6zM12 2C6.5 2 2 6.4 2 12c0 2.1.6 4.1 1.8 5.9L2 22l4.2-1.7C8 21.6 10 22 12 22c5.5 0 10-4.4 10-10S17.5 2 12 2z"/>
+            </svg>
+          </a>
+
+          <a href="tel:08024155919" class="inline-flex items-center gap-2 px-4 py-3 border rounded-md">
+            Call: 08024155919
+          </a>
+        </div>
+      </div>
+
+      <div class="text-sm text-slate-300">
+        <h4 class="font-semibold">Venue</h4>
+        <p class="mt-2">EduTechRitt AI Training Center<br/>KM 38 Lekki-Epe Expressway, Eputu Mall, Lekki, Lagos State</p>
+
+        <h4 class="font-semibold mt-4">Office Hours</h4>
+        <p class="mt-2">Mon–Sat: 9:00 AM — 5:00 PM</p>
+
+        <h4 class="font-semibold mt-4">Email</h4>
+        <p class="mt-2">info@edutechritt.com</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-white border-t border-slate-200 py-6">
+    <div class="max-w-6xl mx-auto px-4 flex items-center justify-between">
+      <div class="text-sm text-slate-600">© EduTechRitt — December Holiday Tech Bootcamp • Starts Dec 9</div>
+      <div class="text-sm text-slate-600">Follow us: <span class="font-semibold">Instagram</span> • <span class="font-semibold">Facebook</span></div>
+    </div>
+  </footer>
+
+  <script>
+    // WhatsApp link setup (number: 08024155919 => +2348024155919)
+    const phone = "2348024155919";
+    const prefill = encodeURIComponent("Hello EduTechRitt! I'm interested in the December Holiday Tech Bootcamp starting Dec 9. Please send registration details for [course name].");
+    const waLink = `https://wa.me/${phone}?text=${prefill}`;
+
+    document.getElementById('enrollBtnTop').setAttribute('href', waLink);
+    document.getElementById('enrollBtnBottom').setAttribute('href', waLink);
+
+    // Mobile menu toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    mobileBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Smooth anchor scroll for links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const id = this.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
